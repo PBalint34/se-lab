@@ -43,7 +43,7 @@ public class TorpedoStore {
 
     if (r >= FAILURE_RATE) {
       // successful firing
-      this.torpedoCount -= numberOfTorpedos;
+      this.torpedoCount -= numberOfTorpedos; //Az eredeti itt a negativ ertekkel tenne egyenlove
       success = true;
     } else {
       // simulated failure
